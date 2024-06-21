@@ -1,0 +1,18 @@
+<!--
+ - Created by pliuzzi on 21/06/24.
+ -->
+
+<!-- Test Signature -->
+<template>
+    <lightning-card title="Test Signature">
+        <template lwc:if={retUrlSigned}>
+            <dl class="slds-list_inline">
+                <dt class="slds-item_label slds-text-color_weak" title="Signature">Signature:</dt>
+                <dd class="slds-item_detail" title="">{retUrlSigned}</dd>
+            </dl>
+        </template>
+        <div slot="footer">
+            <lightning-button variant="brand" label="Calculate signature" onclick={onCalculateSignatureClick}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
